@@ -1,0 +1,12 @@
+public class Main {
+    public static void table(int a)
+    {
+        if (a == 70)
+            return;
+            System.out.println(a + 7 + " ");
+        table(a + 7);
+    }
+    public static void main(String[] args) {
+        table(7);
+    }
+}
