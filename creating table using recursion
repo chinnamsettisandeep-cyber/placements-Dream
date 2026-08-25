@@ -1,12 +1,12 @@
 public class Main {
-    public static void table(int a)
+    public static void table(int a, int b)
     {
-        if (a == 70)
+        if (b == 11)
             return;
-            System.out.println(a + 7 + " ");
-        table(a + 7);
+            System.out.println(a + "*" + b + "="+(a*b));
+        table(a ,(b + 1));
     }
     public static void main(String[] args) {
-        table(7);
+        table(7,1);
     }
 }
