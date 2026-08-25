@@ -1,0 +1,19 @@
+public class Main {
+    public static int san(int a, int b) {
+        int big = Math.max(a, b);
+        int small = Math.min(a, b);
+        while (b !=0){
+            a = b;
+            b = a%b;
+        }
+        return a;
+    }
+    public static void main(String[] args) {
+        int []a = {56,2,6,25,64,12,32};
+        int gcd = a[0];
+        for (int i = 1; i < 7; i++) {
+            gcd =  san(gcd, a[i]);
+        }
+        System.out.println("The GCD is : " + gcd);
+    }
+}
